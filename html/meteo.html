@@ -1,0 +1,57 @@
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/styles-meteo.css">
+        <title>El Tiempo en tu ciudad</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html">
+                <img src="/assets/img/inicio.png" alt="iconoInicio">
+                <h2>Inicio</h2>
+            </a>
+        </header>
+
+        <main class="main">
+            <div class="weather">
+                <!--Tiempo real-->
+                <div id="currentWeather" class="currentWeather"> 
+                    <h2 class="city" id="cityName"></h2>
+                    <p class="weatherNow" id="weatherDescription"></p>
+                    <div class="current-data">
+                        <div>
+                            <img id="currentWeatherIcon" class="weather-icon" src="" alt="Weather Icon">
+                        </div>
+                        <div class="current-grades" id="currentTemperature">
+                            <img class="decoImg" src="/assets/img/meteo-deco.png" alt="grados">
+                        </div>
+                        <ul class="weather-more-info">
+                            <li id="precipitation">Precipitaciones: </li>
+                            <li id="humidity">Humedad: </li>
+                            <li id="wind">Viento: </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Pronóstico-->
+                <ul id="forecastWeather" class="forecastWeather">
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <nav>
+                <a href="./reloj.html"><img src="/assets/img/reloj.png" alt="clock"></a>
+                <a href="./contrasena.html"><img src="/assets/img/candado.png" alt="lock"></a>
+                <a href="./enlaces.html"><img src="/assets/img/enlace.png" alt="link"></a>
+                <a href="./meteo.html"><img src="/assets/img/meteo.png" alt="cloud"></a>
+            </nav>
+        </footer>
+
+        <script src="/js/script.js"></script>
+        <script src="/js/meteo.js"></script>
+    </body>
+</html>

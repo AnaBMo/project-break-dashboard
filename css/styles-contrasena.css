@@ -1,3 +1,36 @@
-h2 {
-    color: red;
+.pass {
+    background-color: rgba(231, 237, 238, 0.6); /* usamos valor de opacidad */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+span {
+    padding: 10px 0px 0px;
+    display: none; /* ocultar los span de resultado, tanto texto como contraseña generada */
+    text-align: center;
+    flex-direction: column;
+}
+
+.passwordForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.password-result { /* debe estar oculto y salir cuando se pulse el botón */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }

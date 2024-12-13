@@ -1,0 +1,57 @@
+.list {
+    background-color: rgba(231, 237, 238, 0.6); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+
+.input-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+}
+
+#name-input {
+    width: 150px;
+}
+
+#url-input {
+    width: 390px;
+}
+
+.add-link-button {
+    width: 150px;
+    text-align: center;
+}
+
+.links-container {
+    background-color: rgba(107, 170, 160, 0.7); 
+    border-radius:2px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+
+li {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
