@@ -6,15 +6,15 @@ recorrer las imágenes de la carpeta añadiendo el dato a la ruta.
 ********************************************************************************** */
 function iniciarCambioDeFondoIndex() {
 
-    let indiceImagen = Math.floor(Math.random() * 10) + 1; // comenzar con una imagen aleatoria 
+    let indiceImagenIndex = Math.floor(Math.random() * 10) + 1; // comenzar con una imagen aleatoria 
 
     // configuración DOM para que arranque con la primera imagen aleatoria:
-    document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagen}.jpg)`;
+    document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagenIndex}.jpg)`;
 
     // cambiar de imagen cada 10 segundos incrementando el indice
     setInterval(() => {
-        indiceImagen = indiceImagen < 10 ? indiceImagen + 1 : 1; 
-        document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagen}.jpg)`;
+        indiceImagenIndex = indiceImagenIndex < 10 ? indiceImagenIndex + 1 : 1; 
+        document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagenIndex}.jpg)`;
     }, 10000);
 }
 
