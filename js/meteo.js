@@ -1,3 +1,26 @@
+/* *********************************************************************************
+IMÁGENES DE FONDO
+Se muestra una imagen de fondo que va cambiando cada 10 segundos.
+Se crea la variable "contador" con número de imagen para poder aumentarlo y así 
+recorrer las imágenes de la carpeta añadiendo el dato a la ruta.
+********************************************************************************** */
+function iniciarCambioDeFondo() {
+
+    let indiceImagen = Math.floor(Math.random() * 10) + 1; // comenzar con una imagen aleatoria 
+
+    // configuración DOM para que arranque con la primera imagen aleatoria:
+    document.body.style.backgroundImage = `url(../assets/img/playa${indiceImagen}.jpg)`;
+
+    // cambiar de imagen cada 10 segundos incrementando el indice
+    setInterval(() => {
+        indiceImagen = indiceImagen < 10 ? indiceImagen + 1 : 1; 
+        document.body.style.backgroundImage = `url(../assets/img/playa${indiceImagen}.jpg)`;
+    }, 10000);
+}
+
+
+// cargar las imágenes de fondo
+iniciarCambioDeFondo()
 
 /* ***********************************************************************
 CONSULTAR EL TIEMPO
@@ -46,7 +69,7 @@ async function fetchRealtimeWeather() {
         // muestra en DOM todos los datos sobre el tiempo en tiempo real
         weatherIconDOM.src = data.current.condition.icon;
         weatherIconDOM.alt = data.current.condition.text;
-        currentGradesDOM.innerHTML = `${data.current.temp_c}<img class="decoImg" src="/assets/img/meteo-deco.png" alt="grados">`;
+        currentGradesDOM.innerHTML = `${data.current.temp_c}<img class="decoImg" src="../assets/img/meteo-deco.png" alt="grados">`;
         precipitationDOM.textContent = `Precipitaciones: ${data.current.precip_mm} mm`; // estos 3 últimos datos van dentro de una ul
         humidityDOM.textContent = `Humedad: ${data.current.humidity}%`;
         windDOM.textContent = `Viento: ${data.current.wind_kph} Km/h`;
