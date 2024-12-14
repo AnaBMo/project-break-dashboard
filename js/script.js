@@ -8,13 +8,18 @@ function iniciarCambioDeFondo() {
 
     let indiceImagen = Math.floor(Math.random() * 10) + 1; // comenzar con una imagen aleatoria 
 
-    // configuración DOM para que arranque con la primera imagen aleatoria:
-    document.body.style.backgroundImage = `url(../assets/img/playa${indiceImagen}.jpg)`;
+    // ruta base automática para que se muestre en dashboard(index.html) y en páginas individuales
+    const basePath = window.location.pathname === '/index.html' || window.location.pathname === '/' 
+        ? './assets/img' 
+        : '../assets/img';
+
+    // configuración DOM para que arranque con la primera imagen aleatoria
+    document.body.style.backgroundImage = `url(${basePath}/playa${indiceImagen}.jpg)`;
 
     // cambiar de imagen cada 10 segundos incrementando el indice
     setInterval(() => {
-        indiceImagen = indiceImagen < 10 ? indiceImagen + 1 : 1; 
-        document.body.style.backgroundImage = `url(../assets/img/playa${indiceImagen}.jpg)`;
+        indiceImagen = indiceImagen < 10 ? indiceImagen + 1 : 1;
+        document.body.style.backgroundImage = `url(${basePath}/playa${indiceImagen}.jpg)`;
     }, 10000);
 }
 
