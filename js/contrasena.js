@@ -1,6 +1,3 @@
-
-
-
 /* ***********************************************************************
 CREAR Y MOSTRAR CONTRASEÑA 
 Entre 12 y 50 caracteres. Se podrá elegir el número de caracteres (DOM input)

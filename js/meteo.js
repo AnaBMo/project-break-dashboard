@@ -1,7 +1,4 @@
 
-
-
-
 /* ***********************************************************************
 CONSULTAR EL TIEMPO
 El tiempo en el momento en el que accedemos a la página con varios elementos:

@@ -9,7 +9,7 @@ body {
     justify-content: center; 
     align-items: center; 
     flex-wrap: wrap;
-    
+    min-height: 85vh;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     color: #535050;
@@ -21,8 +21,7 @@ body {
 
 main {
     flex-grow: 1;
-    
-    min-height: 100vh; /* indica el alto mínimo que en este caso es el 100% de pant visible */
+    min-height: 85vh; /* indica el alto mínimo que en este caso es el 85% de pant visible */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -57,7 +56,6 @@ nav {
     z-index: 999;
     width: 300px;
 }
-
 
 
 /* ************ ELEMENTOS
@@ -135,5 +133,5 @@ button:active {
 section {
    padding: 20px;
    width: 500px;
-   height: auto;
+   
 }

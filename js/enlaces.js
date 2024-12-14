@@ -1,4 +1,3 @@
-
 /* ***********************************************************************
 ALMACENAR ENLACES
 Tendremos 2 inputs. Uno de ellos será el título que aparecerá en cada uno 

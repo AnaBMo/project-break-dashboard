@@ -1,5 +1,3 @@
-
-
 /* *********************************************************************************
 RELOJ DIGITAL
 - Horas, minutos y segundos. Con actualización automática. newDate() setInterval()
