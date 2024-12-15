@@ -11,12 +11,12 @@ function backgroundIndex(quitarPunto2 = false) {
     const prefijoRuta2 = quitarPunto2 ? "./assets/img/" : "../assets/img/";
 
     // configuración DOM para que arranque con la primera imagen aleatoria:
-    document.body.style.backgroundImage = `url(${prefijoRuta2}playa${indiceImagen2}.jpg)`;
+    document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagen2}.jpg)`;
 
     // cambiar de imagen cada 10 segundos incrementando el indice
     setInterval(() => {
         indiceImagen2 = indiceImagen2 < 10 ? indiceImagen2 + 1 : 1; 
-        document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagen}.jpg)`;
+        document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagen2}.jpg)`;
     }, 10000);
 }
 
