@@ -21,4 +21,4 @@ function iniciarCambioDeFondo(quitarPunto = false) {
 }
 
 // cargar las imágenes de fondo
-iniciarCambioDeFondo();
+iniciarCambioDeFondo(quitarPunto = true);
