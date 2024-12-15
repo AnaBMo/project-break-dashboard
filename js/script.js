@@ -4,21 +4,20 @@ Se muestra una imagen de fondo que va cambiando cada 10 segundos.
 Se crea la variable "contador" con número de imagen para poder aumentarlo y así 
 recorrer las imágenes de la carpeta añadiendo el dato a la ruta.
 ********************************************************************************** */
-function backgroundIndex(quitarPunto2 = false) {
-    let indiceImagen2 = Math.floor(Math.random() * 10) + 1; // comenzar con una imagen aleatoria 
+function iniciarCambioDeFondo() {
 
-    // Configuración del prefijo de la ruta basado en el parámetro:
-    const prefijoRuta2 = quitarPunto2 ? "./assets/img/" : "../assets/img/";
+    let indiceImagen = Math.floor(Math.random() * 10) + 1; // comenzar con una imagen aleatoria 
 
     // configuración DOM para que arranque con la primera imagen aleatoria:
-    document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagen2}.jpg)`;
+    document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagen}.jpg)`;
 
     // cambiar de imagen cada 10 segundos incrementando el indice
     setInterval(() => {
-        indiceImagen2 = indiceImagen2 < 10 ? indiceImagen2 + 1 : 1; 
-        document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagen2}.jpg)`;
+        indiceImagen = indiceImagen < 10 ? indiceImagen + 1 : 1; 
+        document.body.style.backgroundImage = `url(./assets/img/playa${indiceImagen}.jpg)`;
     }, 10000);
 }
 
+
 // cargar las imágenes de fondo
-backgroundIndex(quitarPunto2 = true);
+iniciarCambioDeFondo()
