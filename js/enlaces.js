@@ -1,11 +1,4 @@
-/* *********************************************************************************
-IMÁGENES DE FONDO
-Se muestra una imagen de fondo que va cambiando cada 10 segundos.
-Se crea la variable "contador" con número de imagen para poder aumentarlo y así 
-recorrer las imágenes de la carpeta añadiendo el dato a la ruta.
-********************************************************************************** */
 
-iniciarCambioDeFondo(quitarPunto=false);
 
 /* ***********************************************************************
 ALMACENAR ENLACES
